@@ -1,4 +1,4 @@
-const API_BASE = 'http://localhost:3000';
+const API_BASE = 'https://bfhl-fullstack-wtta.onrender.com';
 
 const EXAMPLE_INPUT = `A->B
 A->C
