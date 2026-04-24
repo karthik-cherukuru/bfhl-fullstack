@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BFHL Hierarchy Analyzer</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="panel">
+        <h1>BFHL Hierarchy Analyzer</h1>
+        <p class="subtitle">Paste one edge per line and visualize generated hierarchies.</p>
+
+        <label for="input-area" class="label">Node relationships</label>
+        <textarea
+          id="input-area"
+          rows="12"
+          placeholder="A->B&#10;A->C&#10;B->D"
+        ></textarea>
+
+        <div class="action-row">
+          <button id="example-btn" class="btn btn-secondary" type="button">Load Example</button>
+          <button id="submit-btn" class="btn btn-primary" type="button">Analyze</button>
+        </div>
+
+        <div id="timeout-warning" class="banner banner-warning hidden"></div>
+        <div id="error-banner" class="banner banner-error hidden"></div>
+      </section>
+
+      <section id="loading" class="panel hidden">
+        <div class="spinner"></div>
+        <p>Analyzing relationships...</p>
+      </section>
+
+      <section id="results" class="results hidden"></section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

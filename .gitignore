@@ -1,0 +1,14 @@
+backend/node_modules/
+backend/.env
+backend/.env.*
+
+.DS_Store
+Thumbs.db
+
+.vercel/
+dist/
+build/
+coverage/
+
+*.log
+SRM - Full Stack Paper.pdf
